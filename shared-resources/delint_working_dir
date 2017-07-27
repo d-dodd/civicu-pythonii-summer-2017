@@ -9,10 +9,10 @@ PROJECT_NAME=$(basename $PWD)
 flake8_result=$(flake8 --config=$PROJECT_NAME/scripts/flake8.cfg .)
 if [ -z "$flake8_result" ]; then
     echo "flake8 passed"
-    future_verification_result=$(python ../copenhagen/travis/future_verification.py django)
-    if [ -z "$future_verification_result" ]; then
-        echo "future_verification passed"
-        exit 0
+#    future_verification_result=$(python ../copenhagen/travis/future_verification.py django)
+#    if [ -z "$future_verification_result" ]; then
+#        echo "future_verification passed"
+#        exit 0
     else
         echo "future_verification.py FAILED with return value: $future_verification_result"
         exit 0  # always succeed so commit can proceed

@@ -129,7 +129,6 @@ for d in the_data:
         ethnicity_emergency.append(d['ethnicity'])
 
 
-
 ethn_counter = collections.Counter(ethnicity)
 shelt_counter = collections.Counter(shelter)
 print("*"*50)
