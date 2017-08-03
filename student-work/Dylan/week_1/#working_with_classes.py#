@@ -1,0 +1,24 @@
+
+class Myclass:
+      def __init__(self, size, color, noise):
+      	  self.size = size
+	  self.color = color
+	  self.noise = noise
+
+      def ring_bell(self):
+     	  return self.noise
+    
+
+
+
+
+
+
+
+
+
+if __name__ =='__main__':
+    class_inst = Myclass()
+    another_inst = Myclass()
+    class_inst.thing = "hello"
+    print(class_inst.thing)
